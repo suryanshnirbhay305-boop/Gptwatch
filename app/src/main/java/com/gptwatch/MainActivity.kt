@@ -1,3 +1,4 @@
+import androidx.compose.ui.platform.LocalContext
 package com.gptwatch.app
 
 import androidx.activity.ComponentActivity
@@ -37,9 +38,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun GPTWatch() {
 
-    val activity = androidx.compose.ui.platform.LocalContext.current as Activity
-
-    val prefs = remember {
+   val activity = LocalContext.current 
         activity.getSharedPreferences("GPTWatch", Activity.MODE_PRIVATE)
     }
 
