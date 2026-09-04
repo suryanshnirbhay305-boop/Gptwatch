@@ -1,6 +1,6 @@
 package com.gptwatch.app
 
-import android.app.Activity
+import androidx.activity.ComponentActivity
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
@@ -21,7 +21,7 @@ import okhttp3.Request
 import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONObject
 
-class MainActivity : Activity() {
+class MainActivity : componentactivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
